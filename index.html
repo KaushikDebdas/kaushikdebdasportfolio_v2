@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Debdas | SQA Professional</title>
+    <meta name="description" content="Professional portfolio of a Software Quality Assurance expert with extensive experience in test automation, quality engineering, and process improvement.">
+    <meta name="keywords" content="SQA, Software Quality Assurance, Test Automation, QA Engineer, Quality Assurance, Testing">
+
+    <!-- External Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary:   "#2563eb",
+                        secondary: "#0f172a",
+                        accent:    "#10b981",
+                        light:     "#f8fafc",
+                        dark:      "#0f172a"
+                    },
+                    fontFamily: { 'sans': ['Space Grotesk','system-ui','sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="scroll-bar"></div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<header>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">
+                <div class="nav-avatar">KD</div>
+                <div>
+                    <div class="nav-brand-name">Kaushik Debdas</div>
+                    <div class="nav-brand-sub">SQA Professional</div>
+                </div>
+            </a>
+            <ul class="nav-links" id="nav-list"></ul>
+            <div class="nav-right">
+                <button class="icon-btn" id="theme-toggle-desktop" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block" style="color:#facc15"></i>
+                </button>
+                <button class="hamburger" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mob-menu" id="mobile-menu">
+        <ul id="mobile-nav-list" style="list-style:none; padding:0; margin:0;"></ul>
+    </div>
+</header>
+
+<main id="main-content">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="home">
+    <div class="hero-dots-bg" id="hero-dots-bg"></div>
+    <div class="hero-inner">
+
+        <!-- Text -->
+        <div class="hero-text animate-fade-in">
+            <p class="hero-eyebrow">THIS IS ME</p>
+            <h1 class="hero-name">Kaushik<br><span>Debdas</span></h1>
+            <span class="hero-pill">SQA Professional</span>
+            <p class="hero-desc">
+                A Software Quality Assurance (SQA) Engineer &amp; Web Developer based in Dhaka, Bangladesh.
+                I specialize in crafting visually appealing and functional websites, ensuring they're robust
+                and reliable through comprehensive testing strategies. Let's collaborate to bring your ideas
+                to life with a focus on quality and reliability!
+            </p>
+            <div class="hero-btns">
+                <a href="https://drive.google.com/file/d/1KSWsBUv1vGtw8nUFsQgsPuX5n94m7uq7/view?usp=sharing/preview"
+                   target="_blank" rel="noopener noreferrer" class="btn-primary resume-pulse">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="#projects" class="btn-outline">
+                    <i class="fas fa-project-diagram"></i> View Projects
+                </a>
+                <a href="#contact" class="btn-ghost">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Photo — Philip Gilbert style -->
+        <div class="philip-wrap animate-slide-up">
+            <div class="philip-photo">
+                <img
+                    src="assets/images/aboutme/IMG_6147_passport.png"
+                    alt="Kaushik Debdas - SQA Professional"
+                    class="animate-float"
+                >
+            </div>
+            <div class="philip-frame"></div>
+            <div class="philip-dots" id="philip-dots"></div>
+            <div class="philip-badge">
+                <div class="badge-ico"><i class="fas fa-check"></i></div>
+                <div class="badge-txt">
+                    <strong>150+ Projects</strong>
+                    <span>Successfully Delivered</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<section id="projects" class="py-16 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">Project Portfolio</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+                Selected projects showcasing expertise in test automation, quality frameworks, and process improvement.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="api">API Testing</button>
+                <button class="filter-btn" data-filter="performance">Performance</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+        </div>
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div class="text-center mt-12">
+            <a href="https://github.com/KaushikDebdas" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-8 py-3 bg-secondary text-white rounded-lg font-semibold hover:bg-gray-800 transition group">
+                <i class="fab fa-github"></i> View All on GitHub
+                <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section id="skills" class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="section-eyebrow">Expertise</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">Technical Skills &amp; Expertise</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Proficient in a wide range of testing methodologies, automation tools, and quality assurance frameworks.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold text-secondary dark:text-white mb-6 flex items-center">
+                    <i class="fas fa-vial mr-3 text-primary"></i> Testing Methodologies
+                </h3>
+                <div id="methodology-list" class="space-y-6"></div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-secondary dark:text-white mb-6 flex items-center">
+                    <i class="fas fa-tools mr-3 text-primary"></i> Tools &amp; Technologies
+                </h3>
+                <div id="tools-list" class="space-y-6"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ EXPERIENCE ═══════════════ -->
+<section id="experience" class="py-16 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="section-eyebrow">Journey</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">Work Experience</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                A track record of improving software quality and implementing efficient testing processes.
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <div id="experience-timeline" class="relative border-l-2 border-primary pl-8 md:pl-12 ml-4"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ EDUCATION ═══════════════ -->
+<section id="education" class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="section-eyebrow">Background</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">Educational Background</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                My academic journey and qualifications in computer science and engineering.
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto" id="education-list"></div>
+    </div>
+</section>
+
+<!-- ═══════════════ CERTIFICATES ═══════════════ -->
+<section id="certificates" class="py-16 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+            <p class="section-eyebrow">Credentials</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">Licenses &amp; Certifications</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Professional certifications that validate my expertise in software quality assurance and testing.
+            </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="cert-filter-tabs" id="cert-filter-tabs"></div>
+
+        <div id="certificates-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+        <div class="text-center mt-12">
+            <a href="https://www.linkedin.com/in/kaushik-debdas-233589208/details/certifications/"
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-8 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition group">
+                <i class="fab fa-linkedin"></i> View All on LinkedIn
+                <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="py-16 bg-gradient-to-r from-secondary to-gray-900 text-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="section-eyebrow" style="color:#93c5fd">Get In Touch</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">
+                Ready to discuss your quality assurance needs or explore collaboration opportunities.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                <div id="contact-info" class="space-y-6 mb-8"></div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect With Me</h4>
+                    <div id="social-links" class="flex space-x-4"></div>
+                </div>
+            </div>
+            <div>
+                <form id="contact-form" class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+                    <div class="mb-5">
+                        <label for="name" class="block text-gray-700 dark:text-gray-200 font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                            placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block text-gray-700 dark:text-gray-200 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                            placeholder="Enter your email address">
+                    </div>
+                    <div class="mb-5">
+                        <label for="subject" class="block text-gray-700 dark:text-gray-200 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                            placeholder="What is this regarding?">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 dark:text-gray-200 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-y"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="bg-secondary text-white py-8 dark:bg-gray-950">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <div class="flex items-center gap-2 mb-1">
+                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">KD</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Kaushik Debdas</h3>
+                </div>
+                <p class="text-gray-400 text-sm">Software Quality Assurance Professional</p>
+            </div>
+            <div class="text-center md:text-right">
+                <div id="footer-links" class="flex flex-wrap justify-center md:justify-end gap-6 mb-3"></div>
+                <p class="text-gray-400 text-sm">© <span id="current-year"></span> Kaushik Debdas. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="notification-container" class="fixed top-4 right-4 z-50"></div>
+
+<!-- External JavaScript Files -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/renderers.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
