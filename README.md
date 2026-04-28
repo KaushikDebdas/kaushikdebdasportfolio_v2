@@ -4,7 +4,7 @@
 
 > A modern, fully responsive personal portfolio website for a Software Quality Assurance Engineer — built with vanilla JavaScript, Tailwind CSS, and a clean modular architecture.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)]([https://kaushikdebdas.github.io](https://kaushikdebdas.github.io/kaushikdebdasportolio_using_ai/))
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://kaushikdebdas.github.io/kaushikdebdasportolio_using_ai/)
 
 ---
 
